@@ -1,7 +1,7 @@
 //#1. Dependencies
 const path = require("path");
 const router = require("express").Router();
-const store = require("../develop/db/store");
+const store = require("../db/store");
 
 
 //#2. Routing
