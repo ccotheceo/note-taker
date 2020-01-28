@@ -5,8 +5,6 @@ const router = require("express").Router();
 //#2. Routing
 
 //HTML GET Requests
-module.exports = function(app) {
-
 
 //notes page route
   router.get("/notes", function(req, res) {
@@ -17,6 +15,5 @@ module.exports = function(app) {
 router.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
-};
 
 module.exports = router;
